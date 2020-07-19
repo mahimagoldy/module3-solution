@@ -1,85 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
 body{
-  font-size: 16px;
-  color: black;
-  background-color: white;
-  font-family: 'Oxygen', sans-serif;
+   font-size: 16px;
+   font-family: 'Roboto', sans-serif;
+}
+#brandtitle{
+   font-weight: 500;
+   letter-spacing: .5px;
+   font-size: x-large;
+   color: black;
+
+}
+#mynavbar{
+   padding: 15px 10px;
+   background-color: #bdbdbd   ;
+   color: black;
 }
 
-/** HEADER **/
-#header-nav {
-  height: 65px;
-  background-color: #da3dce;   
-  border-radius: 0;
-  border: 0;
-  margin: 0;
-  border-bottom: 1px solid black;
+h1{
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+   text-align: center;
+   text-transform: capitalize;
+ }
+.blocks{
+   margin: 2% 5%;
+   background-color: lightgray;
+   position: relative;
+   width: 25%;
+   max-width: 25vw;
+   height: auto;
+   overflow: auto;
+   box-sizing: border-box;
+   box-shadow: 0px 2px 5px #aaa;
+}
+#chicktitle, #beeftitle, #sushititle{
+   text-align: right;
+   margin: 15px 17px; 
+   margin: 0;
+}
+
+p{
+   padding: .3rem;
+   text-align: justify;
+}
+#chicken, #beef, #sushi{
+   float: left;
+   margin-right: 20px;
+}
+.card{
+   border: 3px solid black;
+   padding: 0 10px;
+}
+
+#card1{
+   background-color: red;
+   color: white;
+}
+#card2{
+   background-color: rosybrown;
+}
+#card3{
+   background-color: slateblue;
+   color: white;
+} 
+.linktitle{
+   text-align: center;
+   /* background-color: #fff; */
+   border-bottom: 1px solid #d5d5d5;
+   color: black;
 }
 
 
-.navbar-brand{
-  margin-left: 25px;
-}
-.container{
-  padding: 0;
-}
-.navbar-brand h1{
-  font-size: 1.5em;
-  font-family: 'Oxygen', sans-serif;
-  color: black;
-  font-weight: bold;
-  margin-top: 0;
-}
 
 
-#nav-list{
-  margin-top: 0;
-}
-li{
-  background-color: #FFFFCD;
-  margin:0;
-}
 
 
-#li-1, #li-2, #li-3{
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-  border-right:1px solid black;
-}
 
 
-.navbar-header button.navbar-toggle{
-  margin-right: 25px;
-  border: 1px solid black;  
-}
-.navbar-header .icon-bar{
-  border: 2px solid black;
+
+
+/* Media Queries */
+
+/* Desktop View (min-width: 992px) */
+
+/* Tablet View (min-width: 768px and max-width: 991px) */
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+   .blocks{
+      display: inline-block;
+   }
+   #chicken, #beef{
+      display: inline-block;
+      width: 42%;
+      max-width: 45vw;
+   }
+   #sushi{
+      display: block;
+      width: 100%;
+      max-width: 89vw;
+   }
 }
 
-#collapsable-nav{
-  border: 0;
-  margin: 0;
-  padding-top: 0;
-}
+/* Mobile View (max-width: 767px) */
 
-#nav-list a{
-  color: black;
-}
-
-#menu{
-  font-size: 35px;
-  font-weight: bold;
-}
-
-section {
-  margin: 10px;
-  border: 1px solid black;
-  height: auto;
-  background-color:#00BCD4;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-h2{
-  font-size: 30px;
-  font-weight: bold;
+@media screen and (max-width: 767px){
+   .blocks{
+      display: block;
+      width: 100%;
+      max-width:85vw;
+   }
 }
